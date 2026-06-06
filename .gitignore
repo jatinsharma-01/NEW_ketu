@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment configurations
+.env
+.env.local
+.env.development
+.env.production
+
+# Local Fallback Database
+submissions.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
