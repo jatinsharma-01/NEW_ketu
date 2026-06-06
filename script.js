@@ -68,8 +68,11 @@ if (consultationForm) {
             submitBtn.style.opacity = '0.7';
             submitBtn.innerHTML = 'PROCESSING BRIEF...';
             
-            // Backend endpoint (using local port 5000)
-            const response = await fetch('http://localhost:5000/api/consultation', {
+            // Backend endpoint — works both locally and on production
+            const API_BASE = window.location.hostname === 'localhost'
+                ? 'http://localhost:5000'
+                : window.location.origin;
+            const response = await fetch(`${API_BASE}/api/consultation`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
