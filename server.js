@@ -24,15 +24,16 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ketu', {
   model.setStorageMode(false, null);
 });
 
-// Start listening for requests
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// Global error handler (must be registered before app.listen)
 app.use((err, req, res, next) => {
   console.error(err.stack);
-
   res.status(500).json({
     success: false,
     message: err.message
   });
+});
+
+// Start listening for requests
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
