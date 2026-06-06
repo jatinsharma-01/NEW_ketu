@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule a Workspace Audit | Ketu Design Studio</title>
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Ketu Design Studio" />
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">STUDIO</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="whyus.html">WHY US</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="contact.html" class="consultation-btn-nav">BOOK CONSULTATION</a>
+        </div>
+    </nav>
+
+    <!-- Floating Mobile/Tablet Consultation Trigger -->
+    <a href="contact.html" class="floating-consultation-btn">Book a Consultation</a>
+
+    <!-- Page Banner -->
+    <header class="page-banner">
+        <div class="page-banner-content">
+            <span class="badge badge-light">IMMEDIATE CONNECT</span>
+            <h1>Design Spatial Roadmaps That Drive Corporate Growth</h1>
+            <p>Connect directly with our elite spatial strategist partners to audit your workflow layout and initiate design execution.</p>
+        </div>
+    </header>
+
+    <!-- Estimation Calculator Section -->
+    <section class="page-section" style="background-color: var(--light-bg); border-bottom: 1px solid var(--dark-border);">
+        <div class="page-container-large">
+            <div class="section-header" style="padding-top: 0;">
+                <span class="badge">AFFORDABLE LUXURY</span>
+                <h2>Quick Investment Estimator</h2>
+                <p class="section-subtitle">Get an instant, data-driven estimate for your premium corporate fit-out before you even book a call.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="calculator-container advanced-calc">
+                <div class="calc-top-row">
+                    <!-- Area Slider -->
+                    <div class="calc-section">
+                        <div class="calc-section-header">
+                            <h3>1. Workspace Size</h3>
+                            <div class="area-input-wrapper">
+                                <input type="number" id="calc-area" value="5000" min="500" max="50000">
+                                <span>sq ft</span>
+                            </div>
+                        </div>
+                        <input type="range" id="calc-area-slider" min="500" max="50000" step="500" value="5000" class="styled-slider">
+                    </div>
+                </div>
+
+                <!-- Quality Cards -->
+                <div class="calc-section">
+                    <h3>2. Finish & Aesthetics Level</h3>
+                    <div class="quality-cards">
+                        <label class="quality-card">
+                            <input type="radio" name="calc-quality" value="1800">
+                            <div class="card-content">
+                                <h4>Standard Corporate</h4>
+                                <p>₹1,800/sqft</p>
+                                <span>Functional & Clean</span>
+                            </div>
+                        </label>
+                        <label class="quality-card active">
+                            <input type="radio" name="calc-quality" value="2500" checked>
+                            <div class="card-content">
+                                <h4>Affordable Luxury</h4>
+                                <p>₹2,500/sqft</p>
+                                <span>Glassmorphism & Premium</span>
+                            </div>
+                        </label>
+                        <label class="quality-card">
+                            <input type="radio" name="calc-quality" value="3500">
+                            <div class="card-content">
+                                <h4>Ultra Premium</h4>
+                                <p>₹3,500/sqft</p>
+                                <span>Bespoke Executive Design</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Add-ons -->
+                <div class="calc-section">
+                    <h3>3. Optional Premium Enhancements</h3>
+                    <div class="addons-grid">
+                        <label class="addon-toggle">
+                            <div class="addon-info">
+                                <h4>Smart IoT Lighting</h4>
+                                <span>+₹250/sqft</span>
+                            </div>
+                            <input type="checkbox" class="calc-addon" value="250">
+                            <span class="toggle-switch"></span>
+                        </label>
+                        <label class="addon-toggle">
+                            <div class="addon-info">
+                                <h4>Biophilic Design</h4>
+                                <span>+₹150/sqft</span>
+                            </div>
+                            <input type="checkbox" class="calc-addon" value="150">
+                            <span class="toggle-switch"></span>
+                        </label>
+                        <label class="addon-toggle">
+                            <div class="addon-info">
+                                <h4>Acoustic Privacy Pods</h4>
+                                <span>+₹300/sqft</span>
+                            </div>
+                            <input type="checkbox" class="calc-addon" value="300">
+                            <span class="toggle-switch"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="calc-result-panel">
+                    <h3>Estimated Investment</h3>
+                    <div class="calc-amount" id="calc-total">₹1,25,00,000</div>
+                    <p class="calc-disclaimer">*This is a preliminary algorithm estimate. Final quotation depends on civil constraints, HVAC routing, and customized glassmorphism implementations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Hub -->
+    <section class="page-section">
+        <div class="page-container-large">
+            <div class="contact-hub-row">
+                
+                <!-- Left Coordinates Side -->
+                <div class="contact-coordinates-side">
+                    <span class="badge">DIRECT CO-ORDINATES</span>
+                    <h2 style="margin-top: 0.5rem;">Let's Talk Workspace Numbers</h2>
+                    <p class="contact-intro">
+                        Whether you want to audit workflow friction in an existing Gurugram floor, fit-out an elite C-Suite executive lounge, or schedule direct procurement logistics, our corporate design partners are ready to assist.
+                    </p>
+                    
+                    <!-- Call Link -->
+                    <a href="tel:+918375801801" class="contact-card-link">
+                        <span class="contact-card-label">Primary Hotline</span>
+                        <span class="contact-card-value">+91 83758 01801</span>
+                        <span class="contact-card-desc">Click to dial immediately and call our Gurugram executive desk.</span>
+                    </a>
+                    
+                    <!-- WhatsApp Link -->
+                    <a href="https://wa.me/918398801801" target="_blank" class="contact-card-link">
+                        <span class="contact-card-label">Executive Chat Channel</span>
+                        <span class="contact-card-value">WhatsApp Chat</span>
+                        <span class="contact-card-desc">Message us directly for faster procurement queries and visual media shares.</span>
+                    </a>
+
+                    <!-- Address Block -->
+                    <div style="background-color: var(--light-bg); border: 1px solid var(--dark-border); padding: 2.5rem; border-radius: 16px;">
+                        <span class="contact-card-label">Headquarters</span>
+                        <h4 style="font-family: var(--font-serif); font-size: 1.4rem; color: var(--premium-blue-dark); margin-bottom: 0.75rem;">Ketu Design Studio</h4>
+                        <p style="font-size: 0.9rem; color: #475569; line-height: 1.7;">
+                            Ketu Design Studio,<br>
+                    1st floor, Orchid Business Park,<br>
+                    Sector 48, Gurugram, Haryana 122018
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Form Side -->
+                <div class="contact-form-side">
+                    <h3>Draft Your Space Brief</h3>
+                    
+                    <form id="consultation-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="Sanjay Mittal" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="org">Organization</label>
+                                <input type="text" id="org" placeholder="Tech Mahindra" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="email">Corporate Email</label>
+                                <input type="email" id="email" placeholder="ceo@company.com" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Direct Number</label>
+                                <input type="tel" id="phone" placeholder="+91 99999 99999" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Workspace Footprint</label>
+                            <select id="size" required>
+                                <option value="" disabled selected>Select Spatial Area Size</option>
+                                <option value="small">Under 5,000 sq ft</option>
+                                <option value="medium">5,000 - 15,000 sq ft</option>
+                                <option value="large">15,000 - 30,000 sq ft</option>
+                                <option value="enterprise">30,000+ sq ft (Enterprise HQ)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Design Parameters & Timelines</label>
+                            <textarea id="message" placeholder="Describe the corporate floor layouts, department flow strategy, and intended structural handover timelines..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">REQUEST EXECUTIVE BRIEF &rarr;</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Premium Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand-col">
+                <img src="logo.png" alt="Ketu Design Studio" class="footer-logo" />
+                <p class="brand-pitch">
+                    Transforming workspace architecture into elite environments of productivity, innovation, and corporate prestige.
+                </p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">LN</a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="tel:+918375801801" aria-label="Phone">PH</a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h3>Quick Nav</h3>
+                <ul>
+                    <li><a href="index.html">Studio</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>Our Core Services</h3>
+                <ul>
+                    <li><a href="services.html#strategy">Corporate Space Strategy</a></li>
+                    <li><a href="services.html#architecture">Bespoke Office Architecture</a></li>
+                    <li><a href="services.html#suites">C-Suite Executive Design</a></li>
+                    <li><a href="services.html#amenities">Luxury Amenity Planning</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h3>Headquarters</h3>
+                <p class="footer-address">
+                    Ketu Design Studio,<br>
+                    1st floor, Orchid Business Park,<br>
+
+                    Sector 48, Gurugram, Haryana 122018
+                </p>
+                <p class="footer-phone">
+                    <strong>Phone:</strong> <a href="tel:+918398801801">+91 83988 01801</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ketu Design Studio. Smart Designs | Seamless Execution. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="contact.html">Contact Form</a>
+                <span class="bullet">&bull;</span>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const calcArea = document.getElementById('calc-area');
+        const calcAreaSlider = document.getElementById('calc-area-slider');
+        const qualityRadios = document.querySelectorAll('input[name="calc-quality"]');
+        const addonCheckboxes = document.querySelectorAll('.calc-addon');
+        const calcTotal = document.getElementById('calc-total');
+
+        if (!calcArea || !calcTotal) return;
+
+        // Sync slider and number input
+        calcArea.addEventListener('input', function() {
+            calcAreaSlider.value = this.value;
+            updateEstimate();
+        });
+        calcAreaSlider.addEventListener('input', function() {
+            calcArea.value = this.value;
+            updateEstimate();
+        });
+
+        // Update active class on quality cards
+        qualityRadios.forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('.quality-card').forEach(card => card.classList.remove('active'));
+                if (this.checked) {
+                    this.closest('.quality-card').classList.add('active');
+                }
+                updateEstimate();
+            });
+        });
+
+        addonCheckboxes.forEach(cb => {
+            cb.addEventListener('change', updateEstimate);
+        });
+
+        function updateEstimate() {
+            const area = parseFloat(calcArea.value) || 0;
+            
+            let baseRate = 2500;
+            const checkedQuality = document.querySelector('input[name="calc-quality"]:checked');
+            if (checkedQuality) baseRate = parseFloat(checkedQuality.value);
+
+            let addonRate = 0;
+            addonCheckboxes.forEach(cb => {
+                if (cb.checked) addonRate += parseFloat(cb.value);
+            });
+
+            const total = area * (baseRate + addonRate);
+            
+            const formatter = new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 0
+            });
+            
+            calcTotal.textContent = formatter.format(total);
+        }
+        
+        // Initial call
+        updateEstimate();
+    });
+    </script>
+</body>
+</html>
